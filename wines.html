@@ -1,0 +1,103 @@
+<?php
+if(!(isset($_session['user'])&&isset($_session['pass'])))
+{
+  header('Location: http://localhost:81/wines/userlogin.html');
+  echo "$_session['user']".'sss';
+  }
+  echo 'ess';
+  
+?>
+<html>
+<head>
+<title> WINES SHEETS </title>
+</head>
+<body>
+<form action="wines2.html" method="post" >
+<input type="submit" value="dailydatelist"/>
+</form>
+
+<form action="update2.php" method="post" > 
+
+<select id="shop" name="shopname">
+            <option value="SRINIVASA WINES"> 1.SRINIVASA WINES</option>
+            <option value="MALLIKARJUNA WINES"> 2.MALLIKARJUNA WINES</option>
+            <option value="SLV RAMANA WINES"> 3. SLV RAMANA WINES</option>
+			 <option value="WHOLE SALE 2"> 4. WHOLE SALE 2</option> 
+		</select><br>
+
+DATE:<input id="date1" type="date" name="curdate"/>
+
+<table>
+<tr>
+ <th> BRAND NAME </th>
+ <th> OPENING STOCK </th>
+ <th> SIZE </th>
+ <th> INVOICE </th>
+ <th> TRANSFER </th>
+ <th> CLOSING STOCK </th>
+ <th> EXPENDITURE </th>
+</tr> 
+
+<tr>
+ <th> <select id="brand" name="brandname">
+            <option value="MCW"> MCW</option>
+            <option value="IBW"> IBW</option>
+            <option value="R STAG"> R STAG</option>
+		</select>	
+	</th>
+ <th> <input id="opstock" type="text" name="opstock"/> </th>
+  <th> <select id="size" name="size">
+            <option value="Q"> Q</option>
+            <option value="P"> P</option>
+            <option value="N"> N</option>
+			<option value="D"> D</option>
+			<option value="650ML">650ML</option> 
+            <option value="330ML"> 330ML</option>			
+		</select>	
+  </th>
+ <th><input id="invoice" type="text" name="invoice"/> </th>
+  <th><input id="transfer" type="text" name="transfer"/> </th>
+ <th> <input id="costock"type="text" name="costock"/></th>
+ <th> <input id="expend" type="text" name="expenditure"/> </th>
+</tr> 
+<br>
+<input id="submit" onclick="onClick()" type="submit" />
+<input  type="submit" value="logout"/>
+</form><br>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

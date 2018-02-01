@@ -1,0 +1,50 @@
+<html>
+<head>
+<title> WINES SHEETS </title>
+<link rel="stylesheet" href="edit1.css"/>
+</head>
+<body>
+<h1> ENTER THE DETAILS TO MODIFY </h1>
+<form action="update4.php" method="post" > 
+
+<span>please enter the shopname:</span><select id="shop" name="shopname">
+            <option value="SRINIVASA WINES"> 1.SRINIVASA WINES</option>
+            <option value="MALLIKARJUNA WINES"> 2.MALLIKARJUNA WINES</option>
+            <option value="SLV RAMANA WINES"> 3. SLV RAMANA WINES</option>
+			 <option value="WHOLE SALE 2"> 4. WHOLE SALE 2</option> 
+		</select><br>
+<span>please enter the date to modify:</span><input id="date1" type="date" name="curdate"/> <br>
+
+<span> please enter brandname: <select id="brand" name="brandname">
+            <option value="MCW"> MCW</option>
+            <option value="IBW"> IBW</option>
+            <option value="R STAG"> R STAG</option>
+		</select>	
+	<br>
+<span>	 please enter size to change:</span> <select id="size" name="size">
+            <option value="Q"> Q</option>
+            <option value="P"> P</option>
+            <option value="N"> N</option>
+			<option value="D"> D</option>
+			<option value="650ML">650ML</option> 
+            <option value="330ML"> 330ML</option>			
+		</select>	<br>
+  
+  
+  <h5> ENTER DETAIL TO MODIFY </h5>
+	
+    	  <select id="edit" name="mod">
+            
+            <option value="2"> 2.opening stock</option>
+            <option value="3"> 3.invoice</option>
+			<option value="4"> 4.transfer</option>
+			<option value="5">5.closing stock</option> 
+            <option value="6"> 6.expenditure</option>			
+		</select>
+		<input name='answer'/>
+		<br>
+		
+		  <input id="submit"  type="submit" value="update" />
+  </form>
+  </body>
+  </html>
